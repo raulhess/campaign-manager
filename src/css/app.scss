@@ -1,1 +1,13 @@
 // app global css in SCSS form
+/* ---------------- GLOBAL VARIABLES ---------------- */
+$font-app: semplicitapro, sans-serif;
+
+/* ---------------- TYPOGRAPHY ---------------- */
+.font-app {
+  font-family: $font-app;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 700;
+}
