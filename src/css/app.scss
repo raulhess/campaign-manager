@@ -11,3 +11,49 @@ $font-app: semplicitapro, sans-serif;
   font-size: 34px;
   font-weight: 700;
 }
+
+.layout-logo {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header-1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header-2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+.campaign-name-input {
+  font-size: 20px;
+  font-weight: 500;
+  border: solid 1px transparent;
+}
+
+.campaign-name-input:hover {
+  border: solid 1px #CECECE;
+}
+
+.campaign-name-input:focus {
+  border: solid 1px white;
+}
+
+.active-menu-item {
+  background: #313131;
+}
+
+// .active-menu-item:after {
+//   position: absolute;
+//   content: "";
+//   top: 0px;
+//   right: 0px;
+//   height: 100%;
+//   width: 4px;
+//   background: $primary;
+// }
