@@ -1,6 +1,6 @@
 <template>
   <q-page class="row q-px-lg justify-center">
-    <div class="col column q-gutter-y-lg" style="max-width: 800px">
+    <div class="col column q-gutter-y-lg" style="max-width: 960px">
       <slot></slot>
     </div>
   </q-page>

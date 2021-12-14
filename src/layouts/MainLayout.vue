@@ -1,18 +1,22 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="bg-white">
     <q-header class="bg-transparent">
-      <q-toolbar class="q-py-lg q-px-lg">
+      <q-toolbar
+        class="q-py-lg q-px-none"
+        style="max-width: 1008px; margin: 0px auto"
+      >
         <q-btn
-          v-if="$q.screen.lt.sm"
+          v-if="$q.screen.lt.md"
           flat
           dense
           round
           icon="menu"
           aria-label="Menu"
           color="grey-10"
+          class="q-ml-lg"
           @click="toggleLeftDrawer"
         />
-        <div class="col row">
+        <div class="col q-mx-lg">
           <q-input
             v-if="$q.screen.gt.xs"
             v-model="search"
