@@ -1,11 +1,21 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    />
-  </q-page>
+  <page-wrapper>
+    <div class="col-auto">
+      <div class="header-1 q-mb-xs">{{ $t("welcome") }}</div>
+      <card>
+        <div>{{ $t("welcomeText") }}</div>
+        <!-- <div class="q-mt-md"></div> -->
+      </card>
+    </div>
+    <!-- <div class="col">
+      <div class="header-2 q-mb-xs">{{ $t("recent") }}</div>
+      <div class="row q-col-gutter-md">
+        <div class="col-sm-4 col-12" v-for="n in 3" :key="`md-${n}`">
+          <card>&nbsp;</card>
+        </div>
+      </div>
+    </div> -->
+  </page-wrapper>
 </template>
 
 <script>
@@ -28,6 +38,8 @@ export default defineComponent({
         }
       });
     });
+
+    // computed style
     return {};
   },
 });
